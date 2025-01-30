@@ -4,16 +4,56 @@
 
 # In Ruby, there are different *types* of data:
 
-# Numbers
+# _____Numbers______
+puts 2
+puts 5
 
-# Non-numbers
+puts 5 + 2
+puts 5 - 2
+puts 5 * 2
+puts 5 / 2
+puts 5 / 2.0
+# When you add the decimal, it is called a 'Float' without, it is an Integer
 
-# True, False
+# _____Non-numbers______
+puts "Hello World!"
+# Note that quotes are needed
+puts "Tacos Are " + "Delicious"
+puts "Tacos " * 3
 
-# Nothing
+# puts "Tacos" + 3 
+# ^Won't work because of string + integer. Use below instead
+puts "Tacos " + 3.to_s
 
-# Variables
+# ______True, False______
 
-# Combine strings and variables
 
-# String manipulation
+
+# ______Nothing______
+puts nil
+#^Inserts a blank line
+
+# ______Variables______
+x = 10
+y = 3
+puts x*y
+
+food = "tacos "
+quantity = 3
+puts food * quantity
+
+# ____Combine strings and variables______
+
+first_name = "John"
+greeting = "Hi, #{first_name}"
+puts greeting
+# ^String interpelation
+
+puts "tacos #{quantity}"
+
+# ______String manipulation___________
+
+puts "Hello".length
+# ^Gets length of string, returns as integer
+puts "Hello".capitalize
+puts "computer".reverse
